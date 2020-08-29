@@ -71,7 +71,7 @@ def run_task():
 #------------------------------------------------------
 # Create schedule
 #------------------------------------------------------
-schedule.every(1).minutes.do(run_task)
+schedule.every(15).minutes.do(run_task)
 schedule.every().day.at('00:00').do(create_file)
 # schedule.every().day.at('14:00').do(report_run)
 # schedule.every().day.at('15:00').do(report_run)
